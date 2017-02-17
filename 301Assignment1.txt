@@ -25,3 +25,10 @@ Goals and benefits
 so students dont get lost
 increase knowledge of disability access
 improve peoples knowledge on history of UP
+
+Subsystems
+-Navigation
+-Tracking
+-admin
+-notification of events such as classes
+
