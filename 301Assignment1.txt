@@ -10,6 +10,7 @@ points of interest- broken down into eating, cultural and uni related
 historical breakdown
 disablity constraints
 smoking areas
+nearest toilet
 where am i? function
 login
 registration
