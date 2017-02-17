@@ -14,6 +14,8 @@ where am i? function
 login
 registration
 connection to UP server
+fundementals will be available to anyone who conects to the wifi, 
+though there will be a login to enable extra features... such as prefernces and gamification
 
 objectives
 -ease of use
