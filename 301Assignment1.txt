@@ -1,0 +1,27 @@
+it will not use gps
+it will not share user info between users
+no advertisements
+someone wouldnt be able to track other people
+
+it will:
+take into consideration pedestrian traffic using heat maps
+detailed description of every building
+points of interest- broken down into eating, cultural and uni related
+historical breakdown
+disablity constraints
+smoking areas
+where am i? function
+login
+registration
+connection to UP server
+
+objectives
+-ease of use
+-consistency reliabilty
+-wifi and power efficiency 
+
+Goals and benefits
+-To improve the flow of pedestrian traffic
+so students dont get lost
+increase knowledge of disability access
+improve peoples knowledge on history of UP
