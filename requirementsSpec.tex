@@ -235,7 +235,50 @@ The Adimin user will require additional permisions in order to create events and
  \hline
 \end{tabular}
 \end{center}
-	}
+	
+\noindent\textbf{UC: Track User Location}
+\begin{flushleft}
+\begin{tabular}{ |p{0.5\textwidth}|p{0.5\textwidth}| }
+  \hline
+  \multicolumn{2}{|p{\textwidth}|}{\textbf{Precondition:} The user must have followed the steps to get directions from their current location to a specified location} \\
+  \hline
+  \textbf{Actor: General User}  & \textbf{System: Navigation} \\
+   \hline
+   & 0. The system displays the campus map indicating users chosen route. \\
+  \hline
+  1. TUCBW general user clicks the Start Navigation button on the map page& 2. The system displays sets of directions until the user arrives at their specified location or they terminate the instruction\\
+  \hline
+  3. User follows the sets of directions as they are displayed until they reach their chosen destination& 4. The system notifies the user that the destination has been reached\\
+  \hline
+  5. TUCEW the general user confirms that the destination has been reached& \\
+  \hline
+  \multicolumn{2}{|p{\textwidth}|}{\textbf{Postcondition: None}} \\
+   \hline
+\end{tabular}
+\end{flushleft}
+
+\bigskip
+\bigskip
+
+\noindent\textbf{UC: View Traffic}
+\begin{flushleft}
+\begin{tabular}{ |p{0.5\textwidth}|p{0.5\textwidth}| }
+  \hline
+  \multicolumn{2}{|p{\textwidth}|}{\textbf{Precondition:} The user must have followed the steps to get directions from their current location to a specified location} \\
+  \hline
+  \textbf{Actor: General User}  & \textbf{System: Navigation} \\
+   \hline
+   & 0. The system displays the campus map indicating users chosen route. \\
+  \hline
+  1. TUCBW general user selects the option to display traffic en-route & 2. The system updates the displayed map to indicate highly congested area in red\\
+  \hline
+  3. TUCEW the general user sees the areas of high congestion marked on the map in red.&\\
+  \hline
+  \multicolumn{2}{|p{\textwidth}|}{\textbf{Postcondition: None}} \\
+   \hline
+\end{tabular}
+\end{flushleft}
+}
         \subsection{Performance Requirements}
 	{Performance requirements bullet list:\\\\
 One can segregate the performance requirements of the Nav-UP system up into two components. These two components are:\\\\
