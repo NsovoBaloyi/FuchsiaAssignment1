@@ -196,6 +196,46 @@ The Adimin user will require additional permisions in order to create events and
     
     	\subsection{External Interface Requirements}
     	\subsection{Functional Requirements}
+	{
+	\begin{center}
+\textbf{UI: Find Current Location}
+\begin{tabular}{ |p{7cm}|p{7cm}| } 
+ \hline
+ Actor: General User & System: Navigation\\ 
+\hline \hline
+ & 0: System displays map on main page\\ 
+\hline
+ 1:TUCBW General User clicks on "Find current location" button & 2: System displays search bar with the location name as well as a pin on the location \\ 
+\hline
+3: General user confirms that it has the correct location & \\
+ \hline
+\end{tabular}
+\end{center}
+
+
+\begin{center}
+\textbf{UI: Get Directions To Location}
+\begin{tabular}{  |p{7cm}|p{7cm}| } 
+ \hline
+ Actor: General User & System: Navigation\\ 
+\hline \hline
+ & 0: 0: System displays map on main page\\ 
+\hline
+ 1:TUCBW General User clicks on "Find location" button & 2: System displays search bar \\ 
+\hline
+3: User types in intended location & 4: System displays map with pinned location \\
+ \hline
+5: User clicks on "Navigate To" button & 6:System asks user to input starting location \\
+ \hline
+7: User inputs starting locaton & 8:System searches for starting location \\
+ \hline
+9: User selects confirm button & 10: System displays map to location \\
+ \hline
+11: User follows directions &  \\
+ \hline
+\end{tabular}
+\end{center}
+	}
         \subsection{Performance Requirements}
 	{Performance requirements bullet list:\\\\
 One can segregate the performance requirements of the Nav-UP system up into two components. These two components are:\\\\
