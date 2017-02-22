@@ -64,9 +64,9 @@
 	\section{Introduction}
     	
         \subsection{Purpose}
-        	\paragraph{The purpose of this document is to put forth a description detailing the NavUP system. It will explain the main purpose of the system, as well as additional subsystems, the interface of these systems, and what they will and will not do, as well as the constraints. Providing a detailed requirement specification of the system as a whole. It is intended for the Client, as well as developers who will integrate the system.}
+        	{The purpose of this document is to put forth a description detailing the NavUP system. It will explain the main purpose of the system, as well as additional subsystems, the interface of these systems, and what they will and will not do, as well as the constraints. Providing a detailed requirement specification of the system as a whole. It is intended for the Client, as well as developers who will integrate the system.}
     	\subsection{Scope}
-        	\paragraph{NavUP will be a mobile device application, that will provide the basic functionalities of a navigation system. The system will only interoperate and function on the Hatfield main campus of the University of Pretoria.  	NavUp will provide a means to navigate the main campus of the University of Pretoria. It will thus provide users choices with regards to which routes they wish to take to reach there destination, taking into account factors such as pedestrian and vehicle traffic as well as providing routes that cater to users who may suffer physical disabilities.  NavUP's goal is to provide a personalised, efficient and convenient means of traversing the university's Hatfield campus. The system will also provide extra additional information regarding useful points of interests such as bathroom locations, as well as provide information to the user regarding the rich history of the University of Pretoria. The navigation system will be required to constantly be connected the the campus's WI-FI and will continually send up and down stream information to a server with regards to users location and destination. The server will be required to calculate the route and factor in additional information as set up by the user and there needs. The server must also be able to handle a high volume of concurrent users and provide them all with there required data. Location tracking will be achieved through the use of --WI-FI signal strength and other : not sure of exact methodology-- techniques and not through the use of GPS. /* This means that the two way communication between the device and the server must --explain requirements here-- */ }
+        	{NavUP will be a mobile device application, that will provide the basic functionalities of a navigation system. The system will only interoperate and function on the Hatfield main campus of the University of Pretoria.  	NavUp will provide a means to navigate the main campus of the University of Pretoria. It will thus provide users choices with regards to which routes they wish to take to reach there destination, taking into account factors such as pedestrian and vehicle traffic as well as providing routes that cater to users who may suffer physical disabilities.  NavUP's goal is to provide a personalised, efficient and convenient means of traversing the university's Hatfield campus. The system will also provide extra additional information regarding useful points of interests such as bathroom locations, as well as provide information to the user regarding the rich history of the University of Pretoria. The navigation system will be required to constantly be connected the the campus's WI-FI and will continually send up and down stream information to a server with regards to users location and destination. The server will be required to calculate the route and factor in additional information as set up by the user and there needs. The server must also be able to handle a high volume of concurrent users and provide them all with there required data. Location tracking will be achieved through the use of --WI-FI signal strength and other : not sure of exact methodology-- techniques and not through the use of GPS. /* This means that the two way communication between the device and the server must --explain requirements here-- */ }
         \subsection{Definitions, Acronyms, and Abbreviations}
         \subsection{References}
         \subsection{Overview}
@@ -137,19 +137,17 @@ steps walked per week. Students and employees will be able to remove push notifi
 
 
             \subsubsection{Hardware Interface}
-		\paragraph{
-			There will be a hardware interface with the routers across the campus in order to triangulate the position of the user and to create heatmaps. The actual Wi-Fi interface between the phone and Wi-Fi will be abstracted by the phone and will be managed by the actual underlying operatig system on the phone.
-		
-		}
+		{
+			There will be a hardware interface with the routers across the campus in order to triangulate the position of the user and to create heatmaps. The actual Wi-Fi interface between the phone and Wi-Fi will be abstracted by the phone and will be managed by the actual underlying operating system on the phone.}
             \subsubsection{Software Interface}
             \subsubsection{Communications Interface} \begin{itemize}
 	    \item Users using the web will use HTTP/HTTPS protocol.
 	    \end{itemize}
             \subsubsection{Memory}
-	    {The mobile application will use a significant amount of space, roughly 300MB, which is due to graphics as well as the mobile application being able to use wifi as well as gps to navigate it's location.\\
+	    {The mobile application will use a significant amount of space, roughly 300MB, which is due to graphics as well as the mobile application being able to use Wi-Fi as well as GPS to navigate it's location.\\
 Primary memory(RAM) will use 200MB on average, based on how long the application is being used.}
             \subsubsection{Operations}
-            	\paragraph{The user will require a series of normal and special case operations to be fulfilled by the system. The user will use the system in normal case operations that comprise of finding the users location, finding a location the user is interested in, including locations such as toilets, and navigating, tracking and guiding the user to these locations. The user will also use the system to save locations of interest for future use as well as check extra information for improved path finding, such as pedestrian traffic, distance or vehicle traffic.\\\\
+            	{The user will require a series of normal and special case operations to be fulfilled by the system. The user will use the system in normal case operations that comprise of finding the users location, finding a location the user is interested in, including locations such as toilets, and navigating, tracking and guiding the user to these locations. The user will also use the system to save locations of interest for future use as well as check extra information for improved path finding, such as pedestrian traffic, distance or vehicle traffic.\\\\
             	The system will consist of three modes of operation. One  being a general case of functionality, available to all users, that provides wayfinding capabilities to all users of the system. The other being a logged in operational mode which allows access to additional features such as account management, route sharing and rating and data storage. The final mode being a special mode of operation that will be an administrative mode. This mode allows the user to generate and manage events, update and maintain the system as well as generate notifications that will be received by other users.\\\\
             	Special modes of operation will involve the system pushing user specific information to the user device that may interest them or might require a route recalculation by the system due to environmental changes, such as pedestrian traffic flow or event related locations of interest as set out by the administrative user. Another special mode of operation is the systems ability to generate interesting facts for the user about locations found on campus, which will be useful to generals users who have an interest in history, while not being intrusive to users who do not care for the operation.\\\\
             	The general user will primarily use the system in en-route to various locations. This will primarily take place between periods of the University time table. Other periods will primarily see the system being used by students with an off period or by visitors and lecturers. The system will see unattended periods of operations while a user is actually walking and being tracked by the system. Further unattended periods of operations will occur when the Server pushes relevant data regarding events and user preferences to the user device.\\\\
@@ -157,7 +155,7 @@ Primary memory(RAM) will use 200MB on average, based on how long the application
             	The system will provide a registered user the option to either save there data, such as preferences, locally on the device or remotely on the server. The system will also provide administrative users methods for backing up the system and several different forms of readouts, reports and tabulations regarding the state and use of the system which can be gathered at an annual or intermittent period and backed up for analysis.}
             \subsubsection{Sit Adaption Requirements}
         
-		\subsection{Product Functions} \paragraph{The main function of the NavUP system will be to show students how to get around campus in the shortest possible way. Thus, this will entail using WiFi, mobile networks and possibly GPS to navigate around Hatfield campus. The basic functions will include:  }
+		\subsection{Product Functions} {The main function of the NavUP system will be to show students how to get around campus in the shortest possible way. Thus, this will entail using WiFi, mobile networks and possibly GPS to navigate around Hatfield campus. The basic functions will include:  }
 	\begin{itemize}
   		\item A heat map to show pedestrian traffic.
 		\item Providing the shortest path from point A to point B.
@@ -170,25 +168,23 @@ Primary memory(RAM) will use 200MB on average, based on how long the application
  		 \item Historical backgrounds of buildings and different parts of campus.
 		\item A login page for users who would like access to more of the personalised functions. Theses functions will be saving locations for future use, a game which rewards users when they reach a certain distance and saving user preferences and interests.
 		\item A random facts generator for distance rewards.
-		\item Switching between WiFi, mobile data and GPS to navigate around campus.
+		\item Switching between Wi-Fi, mobile data and GPS to navigate around campus.
 		\item A timetable function for users to input their timetables and show exactly where their lectures will take place with reminders.
-		\item Provide adminitrative security for login functionality.
+		\item Provide administrative security for login functionality.
 		\item Rating system and review for restaurants and parking.
 		\item Route options such as scenic routes and fastest route.
 		\item Ability to share directions as well as estimated time of arrival.
 	\end{itemize}
     	\subsection{User Characteristics}  
-		\paragraph{ 
+		{ 
 
-There will be three main types of users interacting with the system, namely a general user, a registered user and an admin. Each of these types will have different rights and access to the system and thus their own requirements.
+There will be three main types of users interacting with the system, namely a general user, a registered user and an admin. Each of these types will have different rights and access to the system and thus their own requirements.\\\\}
 
-The general user will use the system to navigate from their location to another specified location. They will need minimal skill in order to utilise the application, including the ability to connect to the Wi-Fi and indicate intended location. The general user wll have restricted usage of the in-app game and certain privilages that require a user profile. They will ot require any additional expertise or education to function the application.
+{The general user will use the system to navigate from their location to another specified location. They will need minimal skill in order to utilise the application, including the ability to connect to the Wi-Fi and indicate intended location. The general user will have restricted usage of the in-app game and certain privileges that require a user profile. They will not require any additional expertise or education to function the application.\\\\}
 
-The registered user will have the same access as the general user plus access to the in-app game and more personilized search options. They will not require any technial skills sans the ones mentioned for the general user. They will also require minimal expertise and education since the app will be designed for easy to understand user interaction.
+{The registered user will have the same access as the general user plus access to the in-app game and more personilized search options. They will not require any technical skills sans the ones mentioned for the general user. They will also require minimal expertise and education since the app will be designed for easy to understand user interaction.\\\\}
 
-The Adimin user will require additional permisions in order to create events and update information. They will need a higher level of expertise to manage and collect information on up-coming and relevant events. They will need minimal education but rather a general knowledge of the campus and the history of the campus. Their techinical skill must include the ability to use the app functions to add and edit information and events.
-
-	} 
+{The Adimin user will require additional permissions in order to create events and update information. They will need a higher level of expertise to manage and collect information on up-coming and relevant events. They will need minimal education but rather a general knowledge of the campus and the history of the campus. Their technical skill must include the ability to use the application functions to add and edit information and events.\\\\} 
     	\subsection{Constraints}   
     	\subsection{Assumptions and Dependencies}
 
@@ -227,7 +223,7 @@ The Adimin user will require additional permisions in order to create events and
  \hline
 5: User clicks on "Navigate To" button & 6:System asks user to input starting location \\
  \hline
-7: User inputs starting locaton & 8:System searches for starting location \\
+7: User inputs starting location & 8:System searches for starting location \\
  \hline
 9: User selects confirm button & 10: System displays map to location \\
  \hline
@@ -300,19 +296,18 @@ Server Performance Requirements\\\\
 	}
         \subsection{Design Constraints}
         \subsection{Software System Attributes}
-		\paragraph{		
+		{		
 			The software system will have the following attributes:
-} 
-
-		\paragraph{Availability:The system and its functions will be available across campus as long as there is an Internet connection with the campus Wi-Fi. 
-}
-		\paragraph{Reliability:The system will provide directions to the correct location, from the correct location, consistently. The system will always be up-to-date and will give correct reliable information regarding the campus and the events on the campus.
-}
-		\paragraph{Portability:The system will be able to function across a multitude of interfaces. Therefore, it will be able to port between Android and iOS with ease. 
-}
-		\paragraph{Maintainability: The application will be able to be extended easily with new functionality. There will also be a good test environment to reduce an make it easy to find system errors.  }
-
-		\paragraph{Security: The system will guarantee security of the users personal login information. It will also keep the preferences collected from the user secure and private. The Admin will also have a secure login account to prevent unauthorized access.}
+\\\\
+		Availability: The system and its functions will be available across campus as long as there is an Internet connection with the campus Wi-Fi. 
+\\\\
+		Reliability: The system will provide directions to the correct location, from the correct location, consistently. The system will always be up-to-date and will give correct reliable information regarding the campus and the events on the campus.
+\\\\
+		Portability: The system will be able to function across a multitude of interfaces. Therefore, it will be able to port between Android and iOS with ease. 
+\\\\
+		Maintainability: The application will be able to be extended easily with new functionality. There will also be a good test environment to reduce an make it easy to find system errors.  
+\\\\
+		Security: The system will guarantee security of the users personal login information. It will also keep the preferences collected from the user secure and private. The Admin will also have a secure login account to prevent unauthorized access.}
         \subsection{Other Requirements}
 	
 	\section{Vision}
