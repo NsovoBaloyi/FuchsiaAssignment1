@@ -66,7 +66,7 @@
         \subsection{Purpose}
         	{The purpose of this document is to put forth a description detailing the NavUP system. It will explain the main purpose of the system, as well as additional subsystems, the interface of these systems, and what they will and will not do, as well as the constraints. Providing a detailed requirement specification of the system as a whole. It is intended for the Client, as well as developers who will integrate the system.}
     	\subsection{Scope}
-        	{NavUP will be a mobile device application, that will provide the basic functionalities of a navigation system. The system will only interoperate and function on the Hatfield main campus of the University of Pretoria.  	NavUp will provide a means to navigate the main campus of the University of Pretoria. It will thus provide users choices with regards to which routes they wish to take to reach there destination, taking into account factors such as pedestrian and vehicle traffic as well as providing routes that cater to users who may suffer physical disabilities.  NavUP's goal is to provide a personalised, efficient and convenient means of traversing the university's Hatfield campus. The system will also provide extra additional information regarding useful points of interests such as bathroom locations, as well as provide information to the user regarding the rich history of the University of Pretoria. The navigation system will be required to constantly be connected the the campus's WI-FI and will continually send up and down stream information to a server with regards to users location and destination. The server will be required to calculate the route and factor in additional information as set up by the user and there needs. The server must also be able to handle a high volume of concurrent users and provide them all with there required data. Location tracking will be achieved through the use of --WI-FI signal strength and other : not sure of exact methodology-- techniques and not through the use of GPS. /* This means that the two way communication between the device and the server must --explain requirements here-- */ }
+{NavUP will be a mobile device application, that will provide the basic functionalities of a navigation system. The system will only interoperate and function on the Hatfield main campus of the University of Pretoria.  	NavUp will provide a means to navigate the main campus of the University of Pretoria. It will thus provide users choices with regards to which routes they wish to take to reach there destination, taking into account factors such as pedestrian and vehicle traffic as well as providing routes that cater to users who may suffer physical disabilities.  NavUP's goal is to provide a personalised, efficient and convenient means of traversing the university's Hatfield campus. The system will also provide extra additional information regarding useful points of interests such as bathroom locations, as well as provide information to the user regarding the rich history of the University of Pretoria. The navigation system will be required to constantly be connected the the campus's WI-FI and will continually send up and down stream information to a server with regards to users location and destination. The server will be required to calculate the route and factor in additional information as set up by the user and there needs. The server must also be able to handle a high volume of concurrent users and provide them all with there required data. Location tracking will be achieved through the use of --WI-FI signal strength and other : not sure of exact methodology-- techniques and not through the use of GPS. /* This means that the two way communication between the device and the server must --explain requirements here-- */ }
         \subsection{Definitions, Acronyms, and Abbreviations}
         \subsection{References}
         \subsection{Overview}
@@ -125,20 +125,27 @@ steps walked per week. Students and employees will be able to remove push notifi
 \centering
 \begin{minipage}{.5\textwidth}
 	\centering
-	\includegraphics[width=2cm, height 8cm]{Navigation}
+	\includegraphics[width=2cm]{Navigation}
 	\caption{Navigation System}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
 	\centering
-	\includegraphics[width=2cm, height 8cm]{BuildingInfo}
+	\includegraphics[width=2cm]{BuildingInfo}
 	\caption{Building Information}
 \end{minipage}%
 \end{figure}
 
 
             \subsubsection{Hardware Interface}
+<<<<<<< HEAD
+
+			There will be a hardware interface with the routers across the campus in order to triangulate the position of the user and to create heatmaps. The actual Wi-Fi interface between the phone and Wi-Fi will be abstracted by the phone and will be managed by the actual underlying operatig system on the phone.
+		
+		
+=======
 		{
 			There will be a hardware interface with the routers across the campus in order to triangulate the position of the user and to create heatmaps. The actual Wi-Fi interface between the phone and Wi-Fi will be abstracted by the phone and will be managed by the actual underlying operating system on the phone.}
+>>>>>>> develop
             \subsubsection{Software Interface}
             \subsubsection{Communications Interface} \begin{itemize}
 	    \item Users using the web will use HTTP/HTTPS protocol.
@@ -176,7 +183,13 @@ Primary memory(RAM) will use 200MB on average, based on how long the application
 		\item Ability to share directions as well as estimated time of arrival.
 	\end{itemize}
     	\subsection{User Characteristics}  
+<<<<<<< HEAD
+		
+
+There will be three main types of users interacting with the system, namely a general user, a registered user and an admin. Each of these types will have different rights and access to the system and thus their own requirements.
+=======
 		{ 
+>>>>>>> develop
 
 There will be three main types of users interacting with the system, namely a general user, a registered user and an admin. Each of these types will have different rights and access to the system and thus their own requirements.\\\\}
 
@@ -184,7 +197,11 @@ There will be three main types of users interacting with the system, namely a ge
 
 {The registered user will have the same access as the general user plus access to the in-app game and more personilized search options. They will not require any technical skills sans the ones mentioned for the general user. They will also require minimal expertise and education since the app will be designed for easy to understand user interaction.\\\\}
 
+<<<<<<< HEAD
+	 
+=======
 {The Adimin user will require additional permissions in order to create events and update information. They will need a higher level of expertise to manage and collect information on up-coming and relevant events. They will need minimal education but rather a general knowledge of the campus and the history of the campus. Their technical skill must include the ability to use the application functions to add and edit information and events.\\\\} 
+>>>>>>> develop
     	\subsection{Constraints}   
     	\subsection{Assumptions and Dependencies}
 
@@ -192,6 +209,25 @@ There will be three main types of users interacting with the system, namely a ge
     
     	\subsection{External Interface Requirements}
     	\subsection{Functional Requirements}
+<<<<<<< HEAD
+    	\input{funcReq}
+    	Most of the use cases follow all the same functional requirements specification. Figure 1 shows a high-level overview of the system. \\
+    	\includegraphics[width=\textwidth]{System_Use_Case_Diagram}
+    	
+    	\subsubsection{Navigation}
+    	\input{Navigation}
+    	\subsubsection{Map}
+    	\input{Map}
+    	\subsubsection{Account}
+    	\input{Account}
+    	\subsubsection{Game}
+    	\input{Game}
+    	\subsubsection{Reporting}
+    	\input{Reporting}
+    	\subsubsection{Notification}
+    	\input{Notification}
+        	
+=======
 	{
 	\begin{center}
 \textbf{UI: Find Current Location}
@@ -275,6 +311,7 @@ There will be three main types of users interacting with the system, namely a ge
 \end{tabular}
 \end{flushleft}
 }
+>>>>>>> develop
         \subsection{Performance Requirements}
 	{Performance requirements bullet list:\\\\
 One can segregate the performance requirements of the Nav-UP system up into two components. These two components are:\\\\
@@ -309,7 +346,14 @@ Server Performance Requirements\\\\
 \\\\
 		Security: The system will guarantee security of the users personal login information. It will also keep the preferences collected from the user secure and private. The Admin will also have a secure login account to prevent unauthorized access.}
         \subsection{Other Requirements}
-	
+			\begin{itemize}
+  				\item The System shall save routes created by the user.
+				\item The system shall save the distance travelled, and score it for game purposes.
+				\item The system shall save the distances into a leader-board database
+				\item The system shall send notifications to the users based on events which occur.
+				\item The system shall allow the user to store data (Preferences etc.)
+				\item The system shall allow the user to rate routes/parking/points of interests
+			\end{itemize}
 	\section{Vision}
 
 
