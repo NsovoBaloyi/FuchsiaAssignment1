@@ -210,29 +210,36 @@ Primary memory(RAM) will use 200MB on average, based on how long the application
         
         \subsubsection{Actor-System Interaction Models}	
 	{
-	\begin{center}
-\textbf{UI: Find Current Location}
+\noindent\textbf{UC: Find Current Location}
+\begin{flushleft}
 \begin{tabular}{ |p{7cm}|p{7cm}| } 
- \hline
- Actor: General User & System: Navigation\\ 
-\hline \hline
+   \hline
+  \multicolumn{2}{|p{\textwidth}|}{\textbf{Precondition:} The user should have their Wi-Fi or mobile data connected} \\
+  \hline
+\textbf {Actor: General User} & \textbf{System: Navigation}\\ 
+\hline
  & 0: System displays map on main page\\ 
 \hline
  1:TUCBW General User clicks on "Find current location" button & 2: System displays search bar with the location name as well as a pin on the location \\ 
 \hline
-3: General user confirms that it has the correct location & \\
- \hline
+3: TUCEW General user confirms that it has the correct location & \\
+  \hline
+  \multicolumn{2}{|p{\textwidth}|}{\textbf{Postcondition: None}} \\
+   \hline
+
 \end{tabular}
-\end{center}
 
+\end{flushleft}
 
-\begin{center}
-\textbf{UI: Get Directions To Location}
+\noindent\textbf{UC: Get Directions To Location}
+\begin{flushleft}
 \begin{tabular}{  |p{7cm}|p{7cm}| } 
- \hline
- Actor: General User & System: Navigation\\ 
-\hline \hline
- & 0: 0: System displays map on main page\\ 
+  \hline
+  \multicolumn{2}{|p{\textwidth}|}{\textbf{Precondition:} The user should have their Wi-Fi or mobile data connected} \\
+  \hline
+ \textbf {Actor: General User} & \textbf{System: Navigation}\\ 
+\hline 
+ & 0: 0: TUCBW System displays map on main page\\ 
 \hline
  1:TUCBW General User clicks on "Find location" button & 2: System displays search bar \\ 
 \hline
@@ -240,24 +247,27 @@ Primary memory(RAM) will use 200MB on average, based on how long the application
  \hline
 5: User clicks on "Navigate To" button & 6:System asks user to input starting location \\
  \hline
-7: User inputs starting location & 8:System searches for starting location \\
+7: User inputs starting locaton & 8:System searches for starting location \\
  \hline
 9: User selects confirm button & 10: System displays map to location \\
  \hline
-11: User follows directions &  \\
- \hline
+11:TUCEW  User follows directions &  \\
+  \hline
+  \multicolumn{2}{|p{\textwidth}|}{\textbf{Postcondition: None}} \\
+   \hline
+
 \end{tabular}
-\end{center}
+\end{flushleft}
 	
 \noindent\textbf{UC: Track User Location}
 \begin{flushleft}
-\begin{tabular}{ |p{0.5\textwidth}|p{0.5\textwidth}| }
+\begin{tabular}{ |p{7cm}|p{7cm}| }
   \hline
   \multicolumn{2}{|p{\textwidth}|}{\textbf{Precondition:} The user must have followed the steps to get directions from their current location to a specified location} \\
   \hline
   \textbf{Actor: General User}  & \textbf{System: Navigation} \\
    \hline
-   & 0. The system displays the campus map indicating users chosen route. \\
+   & 0. TUCBW The system displays the campus map indicating users chosen route. \\
   \hline
   1. TUCBW general user clicks the Start Navigation button on the map page& 2. The system displays sets of directions until the user arrives at their specified location or they terminate the instruction\\
   \hline
@@ -275,15 +285,15 @@ Primary memory(RAM) will use 200MB on average, based on how long the application
 
 \noindent\textbf{UC: View Traffic}
 \begin{flushleft}
-\begin{tabular}{ |p{0.5\textwidth}|p{0.5\textwidth}| }
+\begin{tabular}{ |p{7cm}|p{7cm}| }
   \hline
   \multicolumn{2}{|p{\textwidth}|}{\textbf{Precondition:} The user must have followed the steps to get directions from their current location to a specified location} \\
   \hline
   \textbf{Actor: General User}  & \textbf{System: Navigation} \\
    \hline
-   & 0. The system displays the campus map indicating users chosen route. \\
+   & 0. TUCBW The system displays the campus map indicating users chosen route. \\
   \hline
-  1. TUCBW general user selects the option to display traffic en-route & 2. The system updates the displayed map to indicate highly congested area in red\\
+  1. General user selects the option to display traffic en-route & 2. The system updates the displayed map to indicate highly congested area in red\\
   \hline
   3. TUCEW the general user sees the areas of high congestion marked on the map in red.&\\
   \hline
