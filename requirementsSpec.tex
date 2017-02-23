@@ -137,16 +137,9 @@ steps walked per week. Students and employees will be able to remove push notifi
 
 
             \subsubsection{Hardware Interface}
-<<<<<<< HEAD
-
-			There will be a hardware interface with the routers across the campus in order to triangulate the position of the user and to create heatmaps. The actual Wi-Fi interface between the phone and Wi-Fi will be abstracted by the phone and will be managed by the actual underlying operatig system on the phone.
-		
-		
-=======
-		{
-			There will be a hardware interface with the routers across the campus in order to triangulate the position of the user and to create heatmaps. The actual Wi-Fi interface between the phone and Wi-Fi will be abstracted by the phone and will be managed by the actual underlying operating system on the phone.}
->>>>>>> develop
+		{There will be a hardware interface with the routers across the campus in order to triangulate the position of the user and to create heatmaps. The actual Wi-Fi interface between the phone and Wi-Fi will be abstracted by the phone and will be managed by the actual underlying operating system on the phone.}
             \subsubsection{Software Interface}
+            \input{softwareInterface}
             \subsubsection{Communications Interface} \begin{itemize}
 	    \item Users using the web will use HTTP/HTTPS protocol.
 	    \end{itemize}
@@ -160,7 +153,7 @@ Primary memory(RAM) will use 200MB on average, based on how long the application
             	The general user will primarily use the system in en-route to various locations. This will primarily take place between periods of the University time table. Other periods will primarily see the system being used by students with an off period or by visitors and lecturers. The system will see unattended periods of operations while a user is actually walking and being tracked by the system. Further unattended periods of operations will occur when the Server pushes relevant data regarding events and user preferences to the user device.\\\\
             	The user will be able to view live heat maps of the main campus which allow them to gauge where the most pedestrian traffic is and avoid those routes. The system will also provide a mode which highlights features such as wheelchair ramps and other facilities that enable an easier means of navigating the campus. The system will by default select routes that it has calculated to be the most direct, however the user may choose to set the route navigation into other modes which select the highest ranked routes, the scenic routes or the users saved routes. Points of interest can also be searched for and ordered and filtered by rating and distance.\\\\
             	The system will provide a registered user the option to either save there data, such as preferences, locally on the device or remotely on the server. The system will also provide administrative users methods for backing up the system and several different forms of readouts, reports and tabulations regarding the state and use of the system which can be gathered at an annual or intermittent period and backed up for analysis.}
-            \subsubsection{Sit Adaption Requirements}
+           
         
 		\subsection{Product Functions} {The main function of the NavUP system will be to show students how to get around campus in the shortest possible way. Thus, this will entail using WiFi, mobile networks and possibly GPS to navigate around Hatfield campus. The basic functions will include:  }
 	\begin{itemize}
@@ -183,33 +176,21 @@ Primary memory(RAM) will use 200MB on average, based on how long the application
 		\item Ability to share directions as well as estimated time of arrival.
 	\end{itemize}
     	\subsection{User Characteristics}  
-<<<<<<< HEAD
-		
-
-There will be three main types of users interacting with the system, namely a general user, a registered user and an admin. Each of these types will have different rights and access to the system and thus their own requirements.
-=======
-		{ 
->>>>>>> develop
-
-There will be three main types of users interacting with the system, namely a general user, a registered user and an admin. Each of these types will have different rights and access to the system and thus their own requirements.\\\\}
+{There will be three main types of users interacting with the system, namely a general user, a registered user and an admin. Each of these types will have different rights and access to the system and thus their own requirements.\\\\}
 
 {The general user will use the system to navigate from their location to another specified location. They will need minimal skill in order to utilise the application, including the ability to connect to the Wi-Fi and indicate intended location. The general user will have restricted usage of the in-app game and certain privileges that require a user profile. They will not require any additional expertise or education to function the application.\\\\}
 
 {The registered user will have the same access as the general user plus access to the in-app game and more personilized search options. They will not require any technical skills sans the ones mentioned for the general user. They will also require minimal expertise and education since the app will be designed for easy to understand user interaction.\\\\}
 
-<<<<<<< HEAD
-	 
-=======
-{The Adimin user will require additional permissions in order to create events and update information. They will need a higher level of expertise to manage and collect information on up-coming and relevant events. They will need minimal education but rather a general knowledge of the campus and the history of the campus. Their technical skill must include the ability to use the application functions to add and edit information and events.\\\\} 
->>>>>>> develop
-    	\subsection{Constraints}   
+{The Admin user will require additional permissions in order to create events and update information. They will need a higher level of expertise to manage and collect information on up-coming and relevant events. They will need minimal education but rather a general knowledge of the campus and the history of the campus. Their technical skill must include the ability to use the application functions to add and edit information and events.\\\\} 
+   
     	\subsection{Assumptions and Dependencies}
+    	\input{Assumptions}
 
 	\section{Specific Requirements}
-    
-    	\subsection{External Interface Requirements}
+   
     	\subsection{Functional Requirements}
-<<<<<<< HEAD
+
     	\input{funcReq}
     	Most of the use cases follow all the same functional requirements specification. Figure 1 shows a high-level overview of the system. \\
     	\includegraphics[width=\textwidth]{System_Use_Case_Diagram}
@@ -226,8 +207,8 @@ There will be three main types of users interacting with the system, namely a ge
     	\input{Reporting}
     	\subsubsection{Notification}
     	\input{Notification}
-        	
-=======
+        
+        \subsubsection{Actor-System Interaction Models}	
 	{
 	\begin{center}
 \textbf{UI: Find Current Location}
@@ -311,7 +292,6 @@ There will be three main types of users interacting with the system, namely a ge
 \end{tabular}
 \end{flushleft}
 }
->>>>>>> develop
         \subsection{Performance Requirements}
 	{Performance requirements bullet list:\\\\
 One can segregate the performance requirements of the Nav-UP system up into two components. These two components are:\\\\
@@ -353,10 +333,5 @@ Server Performance Requirements\\\\
 				\item The system shall send notifications to the users based on events which occur.
 				\item The system shall allow the user to store data (Preferences etc.)
 				\item The system shall allow the user to rate routes/parking/points of interests
-			\end{itemize}
-	\section{Vision}
-
-
-	\section{Background}
-	
+			\end{itemize}	
 \end{document}
