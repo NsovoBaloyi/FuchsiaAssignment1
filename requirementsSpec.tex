@@ -73,6 +73,10 @@
 				\item UI : User Interface
 				\item POI : Points of Interest
 				\item C.R.U.D : Create Read Update Delete
+				\item GPS: Global Positioning System
+				\item Wi-Fi: is a technology that allows for wireless local area networking
+				\item MB: Megabyte
+				\item Wayfinding: All means by which people and animals orientate and navigate themselves through physical space
 			\end{itemize}
         \subsection{References}
         \subsection{Overview}
@@ -82,21 +86,22 @@
         \subsection{Product Perspective}
         
         	\subsubsection{System Interface}{
-User Interface:\\\\
+\textbf{User Interface}:\\\\
 Functionality:\\\\
 The functionality of the user interface is to allow the user to interact with the system. Through this aspect of the system the user can perform all the functions necessary to use NavUP. Through this the user is able to login and register an account, use the navigation and tracking systems as well as well as view map information and become apart of the gamification of the application.\\\\
 How functionality achieves requirements:\\\\
 The user interface allows the functionality of the application to meet the requirements. The user is able to navigate to the necessary location through searching and navigating via this UI, fulfilling the navigation requirement. The user is able to be displayed information of disability access, generic map information and even receive notifications through this UI, fulfilling these requirements.\\\\
-Hardware Interface:\\\\
+\textbf{Hardware Interface}:\\\\
 Functionality:\\\\
 The functionality of this system interface is the physical hardware that allows software operation. The hardware in this case is specifically the mobile devices upon which the NavUP application will be installed.\\\\
 How functionality achieves requirements :\\\\
 This hardware will allow the achievement of the requirements by facilitating the operation of the application. The user will be able to press the physical device screen in order to operate the navigation and other such features of the application. The networking hardware of the components such as the wireless fidelity infrastructure within the device allows for communication to the system server. It is through this communication that the user's location can be determined and the system can function.\\\\
-Software Interface:\\\\
+\textbf{Software Interface:}\\\\
 Functionality:\\\\
-The functionality of the software interface is to facilitate the communication between the hardware infrastructure of the devices running the application and the actual NavUP application. An example of this would be the operating system of the device in use. The operating system would allow the application to make use of the wifi infrastructure and communicate the necessary information to the application. This would enable the device to communicate with the server and perform the necessary requests.\\\\
+The functionality of the software interface is to facilitate the communication between the hardware infrastructure of the devices running the application and the actual NavUP application. An example of this would be the operating system of the device in use. The operating system would allow the application to make use of the Wi-Fi infrastructure and communicate the necessary information to the application. This would enable the device to communicate with the server and perform the necessary requests.\\\\
 How functionality achieves requirements :\\\\
-This would allow the achievement of the requirements as the communication of the application to the system server is vital to the operation of the NavUP system. By allowing communication over wifi the user's location can be determined, accounts can be logged in or created, information regarding heat mapping and general information can be retrieved by the user, fulfilling this requirement. Notifications can also be received by the users application through the wifi communication , fulfilling the this requirement .}
+This would allow the achievement of the requirements as the communication of the application to the system server is vital to the operation of the NavUP system. By allowing communication over Wi-Fi the user's location can be determined, accounts can be logged in or created, information regarding heat mapping and general information can be retrieved by the user, fulfilling this requirement. Notifications can also be received by the users application through the Wi-Fi communication , fulfilling the this requirement .}
+
 		
             \subsubsection{User Interface}
 	    {All users will have access to the navigation system when the application is launched.
@@ -145,15 +150,14 @@ steps walked per week. Students and employees will be able to remove push notifi
 
 
             \subsubsection{Hardware Interface}
-		{There will be a hardware interface with the routers across the campus in order to triangulate the position of the user and to create heatmaps. The actual Wi-Fi interface between the phone and Wi-Fi will be abstracted by the phone and will be managed by the actual underlying operating system on the phone.}
+		{There will be a hardware interface with the routers across the campus in order to triangulate the position of the user and to create heat maps. The actual Wi-Fi interface between the phone and Wi-Fi will be abstracted by the phone and will be managed by the actual underlying operating system on the phone.}
             \subsubsection{Software Interface}
             \input{softwareInterface}
             \subsubsection{Communications Interface} \begin{itemize}
 	    \item Users using the web will use HTTP/HTTPS protocol.
 	    \end{itemize}
             \subsubsection{Memory}
-	    {The mobile application will use a significant amount of space, roughly 300MB, which is due to graphics as well as the mobile application being able to use Wi-Fi as well as GPS to navigate it's location.\\
-Primary memory(RAM) will use 200MB on average, based on how long the application is being used.}
+	    {The mobile application will use a significant amount of space, roughly 300MB, which is due to graphics as well as the mobile application being able to use Wi-Fi as well as GPS to navigate it's location. Primary memory(RAM) will use 200MB on average, based on how long the application is being used.}
             \subsubsection{Operations}
             	{The user will require a series of normal and special case operations to be fulfilled by the system. The user will use the system in normal case operations that comprise of finding the users location, finding a location the user is interested in, including locations such as toilets, and navigating, tracking and guiding the user to these locations. The user will also use the system to save locations of interest for future use as well as check extra information for improved path finding, such as pedestrian traffic, distance or vehicle traffic.\\\\
             	The system will consist of three modes of operation. One  being a general case of functionality, available to all users, that provides wayfinding capabilities to all users of the system. The other being a logged in operational mode which allows access to additional features such as account management, route sharing and rating and data storage. The final mode being a special mode of operation that will be an administrative mode. This mode allows the user to generate and manage events, update and maintain the system as well as generate notifications that will be received by other users.\\\\
@@ -163,13 +167,13 @@ Primary memory(RAM) will use 200MB on average, based on how long the application
             	The system will provide a registered user the option to either save there data, such as preferences, locally on the device or remotely on the server. The system will also provide administrative users methods for backing up the system and several different forms of readouts, reports and tabulations regarding the state and use of the system which can be gathered at an annual or intermittent period and backed up for analysis.}
            
         
-		\subsection{Product Functions} {The main function of the NavUP system will be to show students how to get around campus in the shortest possible way. Thus, this will entail using WiFi, mobile networks and possibly GPS to navigate around Hatfield campus. The basic functions will include:  }
+		\subsection{Product Functions} {The main function of the NavUP system will be to show students how to get around campus in the shortest possible way. Thus, this will entail using Wi-Fi, mobile networks and possibly GPS to navigate around Hatfield campus. The basic functions will include:  }
 	\begin{itemize}
   		\item A heat map to show pedestrian traffic.
 		\item Providing the shortest path from point A to point B.
  		 \item A distance tracker to show users the distance left until they reach their destination.
 		\item A specialized route for disabled users.
-		\item Points of interest around the university such as restaurants, ATMs, the church, Scienza and Botanical Gardens.
+		\item Points of interest around the university such as restaurants, ATMs, the church, toilets and Botanical Gardens.
  		 \item Essential Areas such as bathrooms, parking areas and smoking areas.
 		\item Exact locations of buildings as well as the lecture halls that they consist of.
 		\item A "Where am I?" function to show users exactly what is around them.
@@ -184,13 +188,13 @@ Primary memory(RAM) will use 200MB on average, based on how long the application
 		\item Ability to share directions as well as estimated time of arrival.
 	\end{itemize}
     	\subsection{User Characteristics}  
-{There will be three main types of users interacting with the system, namely a general user, a registered user and an admin. Each of these types will have different rights and access to the system and thus their own requirements.\\\\}
+{There will be three main types of users interacting with the system, namely a general user, a registered user and an administrator. Each of these types will have different rights and access to the system and thus their own requirements.\\\\}
 
 {The general user will use the system to navigate from their location to another specified location. They will need minimal skill in order to utilise the application, including the ability to connect to the Wi-Fi and indicate intended location. The general user will have restricted usage of the in-app game and certain privileges that require a user profile. They will not require any additional expertise or education to function the application.\\\\}
 
 {The registered user will have the same access as the general user plus access to the in-app game and more personalized search options. They will not require any technical skills sans the ones mentioned for the general user. They will also require minimal expertise and education since the app will be designed for easy to understand user interaction.\\\\}
 
-{The Admin user will require additional permissions in order to create events and update information. They will need a higher level of expertise to manage and collect information on up-coming and relevant events. They will need minimal education but rather a general knowledge of the campus and the history of the campus. Their technical skill must include the ability to use the application functions to add and edit information and events.\\\\} 
+{The Administrative user will require additional permissions in order to create events and update information. They will need a higher level of expertise to manage and collect information on up-coming and relevant events. They will need minimal education but rather a general knowledge of the campus and the history of the campus. Their technical skill must include the ability to use the application functions to add and edit information and events.\\\\} 
    
     	\subsection{Assumptions and Dependencies}
     	\input{Assumptions}
@@ -200,9 +204,11 @@ Primary memory(RAM) will use 200MB on average, based on how long the application
     	\subsection{Functional Requirements}
 
     	\input{funcReq}
-    	Most of the use cases follow all the same functional requirements specification. Figure 1 shows a high-level overview of the system. \\
+    	Most of the use cases follow all the same functional requirements specification. Figure 6 shows a high-level overview of the system. \\
     	\includegraphics[width=\textwidth]{System_Use_Case_Diagram}
-    	
+    	\begin{center}
+    	Figure 6: System Use Case
+    	\end{center}
     	\subsubsection{Navigation}
     	\input{Navigation}
     	\subsubsection{Map}
@@ -255,7 +261,7 @@ Primary memory(RAM) will use 200MB on average, based on how long the application
  \hline
 5: User clicks on "Navigate To" button & 6:System asks user to input starting location \\
  \hline
-7: User inputs starting locaton & 8:System searches for starting location \\
+7: User inputs starting location & 8:System searches for starting location \\
  \hline
 9: User selects confirm button & 10: System displays map to location \\
  \hline
@@ -324,29 +330,29 @@ Primary memory(RAM) will use 200MB on average, based on how long the application
 			RQ9 The system shall allow the administrator to assign account privileges\\
 			RQ10 The system should allow users to rate routes, parking lots and locations\\
 			RQ11 The system should generate random facts as well as UP related facts\\
-			RQ12 The system should allow the user to input their timetable and any events/activitiesm it should also provide an ETA based on the timetable\\
+			RQ12 The system should allow the user to input their timetable and any events/activities it should also provide an ETA based on the timetable\\
 			RQ13 Update activities/events\\
 			RQ14 Provide route options based on pedestrian traffic and preferences\\
-			RQ15 Game mechanics based on movement (earning of points based on distance travelled and pickups)\\
+			RQ15 Game mechanics based on movement (earning of points based on distance travelled and pick-ups)\\
 			RQ16 The system shall allow the user to customize the input to create a unique route\\
 			RQ17 The system shall allow the administrator to create/update/delete locations\\
 			RQ18 The system shall allow the administrator to create/update/delete notifications\\
 			RQ19 The system shall generate annual, systems and statistical reports\\
-			RQ20 Provide realtime directions and pathfinding\\
+			RQ20 Provide real-time directions and pathfinding\\
 			RQ21 The system should allow the user to share their routes\\\\
 			\noindent\textbf{Use Cases List}\\\\
 			UC1 Generate annual report\\
 			UC2 Generate systems report\\
 			UC3 Generate statistical report\\
-			UC4  View report *\\
+			UC4 View report\\
 			UC5 CRUD event/activity\\
-			UC6 Create notification *\\
-			UC7 View notification *\\
-			UC8 Update notification *\\
+			UC6 Create notification\\
+			UC7 View notification\\
+			UC8 Update notification\\
 			UC9 Calculate points according to distance travelled\\
 			UC10 Calculate bonus points\\
 			UC11 View scoreboard\\
-			UC12 CRUD user acounts\\
+			UC12 CRUD user accounts\\
 			UC13 Find current location\\
 			UC14 Track user location\\
 			UC15 Generate directions and pathfinding\\
@@ -368,9 +374,9 @@ Primary memory(RAM) will use 200MB on average, based on how long the application
 			UC31 View parking rating\\
 			UC32 Create timetable\\
 			UC33 View timetable\\
-			UC34 Caluculate ETA based on timetable\\
-			UC35 Login user *\\
-			UC36 Logout user *\\
+			UC34 Calculate ETA based on timetable\\
+			UC35 Login user\\
+			UC36 Logout user\\
 			\newpage
 			\vfill
 			\begin{figure}[!h]
